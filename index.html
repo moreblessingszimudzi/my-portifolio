@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
     <!-- MAIN CONTAINER -->
@@ -28,7 +32,7 @@
       </nav>
 
       <!-- HERO SECTION -->
-      <section id="hero">
+      <section id="home">
         <!-- HERO TEXT -->
         <div class="hero-text">
           <p class="intro-text">Hi, I'm</p>
@@ -42,16 +46,24 @@
           </p>
         </div>
         <div class="hero-buttons">
-          <button><a href="#projects">View My Work</a></button>
-          <button><a href="#contact">Contact Me</a></button>
+          <a href="#projects" class="hero-button-1">View My Work</a>
+          <a href="#contact" class="hero-button-2">Contact Me</a>
         </div>
         <div class="hero-contact">
           <p>Follow me</p>
           <div class="hero-icons">
-            <i class="fa-brands fa-instagram"><a href=""></a></i>
-            <i class="fa-brands fa-github"><a href=""></a></i>
-            <i class="fa-brands fa-linkedin"><a href=""></a></i>
-            <i class="fa-brands fa-facebook"><a href=""></a></i>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
           </div>
         </div>
         <img
@@ -62,21 +74,155 @@
       </section>
 
       <!-- ABOUT ME -->
-      <div id="about">
+      <section id="about">
         <div class="heading">
           <h2>About Me</h2>
           <p>
-            l'm a junior frontend developer passionate about creating
+            I'm a junior frontend developer passionate about creating
             <br />modern and responsive websites.l enjoy turning ideas into
             <br />real products that provide great user experiences.
           </p>
+          <!-- I'm a passionate Frontend Developer who enjoys building responsive, accessible, and user-friendly web applications. I love transforming ideas into engaging digital experiences using modern web technologies. -->
           <p>
-            l'm currently focused on improving my skills in HTML,CSS,JavaScript
+            I'm currently focused on improving my skills in HTML,CSS,JavaScript
             and building projects that solve real problems.
           </p>
           <button><a href="#contact">Read More About Me</a>&rarr;</button>
         </div>
-      </div>
+
+        <!-- PROFILE CARD -->
+        <div class="profile-card">
+          <div class="profile-info">
+            <i class="fa-solid fa-user"></i>
+            <span>Name : Moreblessings </span>
+          </div>
+          <div class="profile-info">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email : moreblessingszimudzi@gmail.com</span>
+          </div>
+          <div class="profile-info">
+            <i class="fa-sharp fa-solid fa-location-dot"></i>
+            <span>Location : Pretoria</span>
+          </div>
+          <div class="profile-info">
+            <i class="fa-solid fa-briefcase"></i>
+            <span>Experience : 1+ years</span>
+          </div>
+        </div>
+      </section>
+      <!-- MY SKILLS -->
+      <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-container">
+          <!-- HTML -->
+          <div class="skill-card">
+            <i class="devicon-html5-plain colored"></i>
+
+            <h3>HTML</h3>
+          </div>
+          <!-- CSS -->
+          <div class="skill-card">
+            <i class="devicon-css3-plain colored"></i>
+            <h3>CSS</h3>
+          </div>
+          <!-- JAVASCRIPT -->
+          <div class="skill-card">
+            <i class="devicon-javascript-plain colored"></i>
+            <h3>JavaScript</h3>
+          </div>
+          <!-- GIT -->
+          <div class="skill-card">
+            <i class="devicon-git-plain colored"></i>
+            <h3>Git</h3>
+          </div>
+          <!-- GITHUB -->
+          <div class="skill-card">
+            <i class="devicon-github-original"></i>
+            <h3>GitHub</h3>
+          </div>
+          <!-- RESPONSIVE DESIGN -->
+          <div class="skill-card">
+            <i class="fa-solid fa-desktop"></i>
+            <h3>Responsive Design</h3>
+          </div>
+          <!-- REACT -->
+          <div class="skill-card">
+            <i class="devicon-react-original colored"></i>
+            <h3>React</h3>
+          </div>
+          <!-- TAILWIND CSS -->
+          <div class="skill-card">
+            <i class="devicon-tailwindcss-original colored"></i>
+            <h3>Tailwind CSS</h3>
+          </div>
+          <!-- FIGMA -->
+          <div class="skill-card">
+            <i class="devicon-figma-plain colored"></i>
+            <h3>Figma</h3>
+          </div>
+          <!-- VS CODE -->
+          <div class="skill-card">
+            <i class="devicon-vscode-plain colored"></i>
+            <h3>VS Code</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- MY SERVICES -->
+      <section id="services">
+        <h2>My Services</h2>
+        <p class="services-description">
+          I offer modern web solutions to help businesses and individuals bring
+          their ideas to life
+        </p>
+        <!-- SERVICE CONTAINER -->
+
+        <div class="services-container">
+          <!-- WEB DEVELOPMENT -->
+          <div class="service-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              Building responsive and modern websites using HTML, CSS and
+              Javascript.
+            </p>
+          </div>
+          <!-- RESPONSIVE DESIGN -->
+
+          <div class="service-card">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Responsive Design</h3>
+            <p>
+              Creating websites that work perfectly on all devices and screen
+              sizes.
+            </p>
+          </div>
+
+          <!-- UI DEVELOPMENT -->
+
+          <div class="service-card">
+            <i class="fa-solid fa-pen"></i>
+            <h3>UI Development</h3>
+            <p>
+              Turning designs and ideas into clean,beautiful and interactive
+              user interfaces.
+            </p>
+          </div>
+
+          <!-- WEBSITE MAINTENANCE -->
+
+          <div class="service-card">
+            <i class="fa-solid fa-gear"></i>
+            <h3>Website Maintenance</h3>
+            <p>
+              Fixing bugs,updating features and keeping your site running
+              smoothly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MY PROJECTS -->
     </div>
   </body>
 </html>
