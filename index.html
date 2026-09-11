@@ -19,7 +19,7 @@
     <div class="main-container">
       <!-- NAVIGATION BAR -->
       <nav class="navigation">
-        <a href="#" class="logo">Moreblessings</a>
+        <a href="#" class="nav-logo">Moreblessings</a>
         <ul class="navigation-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -28,55 +28,66 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#" class="cv-button">Download CV</a>
+        <a href="#" class="cv-button"
+          ><span class="cv-button-icon"
+            ><i class="fa-solid fa-download"></i></span
+          >Download CV</a
+        >
       </nav>
 
       <!--HOME/ HERO SECTION -->
       <section id="home">
         <!-- HERO TEXT -->
-        <div class="hero-text">
-          <p class="intro-text">Hi, I'm</p>
+        <div class="hero-content">
+          <div class="hero-text">
+            <p style="padding: 9px" class="intro-text">Hi, I'm</p>
 
-          <h1>Moreblessings</h1>
-          <h2>Frontend Developer</h2>
+            <h1>Moreblessings</h1>
+            <h2>Frontend Developer</h2>
 
-          <p class="hero-description">
-            I build clean, responsive, and user-friendly websites <br />
-            <b>using modern web technologies.</b>
-          </p>
-        </div>
-        <div class="hero-buttons">
-          <a href="#projects" class="hero-button-1">View My Work</a>
-          <a href="#contact" class="hero-button-2">Contact Me</a>
-        </div>
-        <div class="hero-contact">
-          <p>Follow me</p>
-          <div class="hero-icons">
-            <a href="#">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="#">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
+            <p class="hero-description">
+              I build clean, responsive, and user-friendly websites <br />
+              using modern web technologies.
+            </p>
+          </div>
+          <div class="hero-buttons">
+            <a href="#projects" class="hero-button-1"
+              >View My Work <span>&#10142;</span></a
+            >
+            <a href="#contact" class="hero-button-2"
+              >Contact Me <span>&#10138; </span></a
+            >
+          </div>
+          <div class="hero-contact">
+            <p>Follow me</p>
+            <div class="hero-icons">
+              <a target="_blank" href="https://www.instagram.com/mz_kayz_offy/">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </div>
           </div>
         </div>
+        <!-- HERO IMAGE -->
         <img
-          style="width: 100px; height: 100px"
-          src="images\moreblessings.jpeg"
+          class="hero-image"
+          src="images\hero image.jpeg"
           alt="Moreblessings's picture"
         />
       </section>
 
       <!-- ABOUT ME -->
       <section id="about">
-        <div class="heading">
-          <h2>About Me</h2>
+        <div class="about-text">
+          <h2 class="about-heading">About Me</h2>
           <p>
             I'm a junior frontend developer passionate about creating
             <br />modern and responsive websites.l enjoy turning ideas into
@@ -87,26 +98,38 @@
             I'm currently focused on improving my skills in HTML,CSS,JavaScript
             and building projects that solve real problems.
           </p>
-          <button><a href="#contact">Read More About Me</a>&rarr;</button>
+          <button class="about-button">
+            <a class="about-link" href="#contact">Read More About Me</a>
+            <span class="button-icon">&rarr; </span>
+          </button>
         </div>
 
         <!-- PROFILE CARD -->
         <div class="profile-card">
           <div class="profile-info">
             <i class="fa-solid fa-user"></i>
-            <span>Name : Moreblessings </span>
+            <span
+              >Name <span class="profile-value">: Moreblessings</span>
+            </span>
           </div>
           <div class="profile-info">
             <i class="fa-solid fa-envelope"></i>
-            <span>Email : moreblessingszimudzi@gmail.com</span>
+            <span
+              >Email
+              <span class="profile-value">
+                : moreblessingszimudzi@gmail.com</span
+              ></span
+            >
           </div>
           <div class="profile-info">
             <i class="fa-sharp fa-solid fa-location-dot"></i>
-            <span>Location : Pretoria</span>
+            <span> Location<span class="profile-value">: Pretoria</span></span>
           </div>
           <div class="profile-info">
             <i class="fa-solid fa-briefcase"></i>
-            <span>Experience : 1+ years</span>
+            <span
+              >Experience <span class="profile-value">: 1+ years</span></span
+            >
           </div>
         </div>
       </section>
