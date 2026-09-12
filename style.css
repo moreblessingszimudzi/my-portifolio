@@ -9,7 +9,7 @@ body {
 /* MAIN CONTAINER */
 .main-container {
   max-width: 100%;
-  width: 95%;
+  width: 70%;
   padding: 0;
   margin: 10px auto;
 }
@@ -45,7 +45,7 @@ body {
 }
 .navigation-links a:hover {
   color: #6c4cff;
-
+  padding: 3px;
   border-bottom: 0.2rem solid #6c4cff;
 }
 /* CV BUTTON */
@@ -69,14 +69,15 @@ body {
   /* padding: 0.5rem; */
   border-bottom: 2px solid #17243a;
 }
-/* HERO CONTENT */
-/* .hero-content { */
+
+HERO CONTENT
+/* .hero-content {
 display: grid;
 grid-auto-flow: row;
 align-content: center;
 justify-content: center;
 gap: 5px;
-/* } */
+} */
 
 .intro-text {
   color: #6c4cff;
@@ -262,6 +263,7 @@ gap: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 3px solid #17243a;
 }
 #services h2 {
   font-weight: bold;
@@ -271,6 +273,7 @@ gap: 5px;
 .services-description {
   line-height: 1rem;
   padding: 0.5rem;
+  font-size: 15px;
 }
 .services-container {
   display: flex;
@@ -281,6 +284,7 @@ gap: 5px;
   background-color: rgb(12, 5, 47);
   border-radius: 7px;
   padding: 0.5rem;
+  border: 1px solid #1e293b;
 }
 .service-card i {
   font-size: 30px;
@@ -292,4 +296,129 @@ gap: 5px;
 }
 .service-card p {
   line-height: 1.3rem;
+
+  font-size: 15px;
+}
+/* MY PROJECTS */
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 2px solid #17243a;
+}
+.my-projects-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my-projects-heading h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+}
+.view-projects {
+  font-size: 16px;
+  color: #6c4cff;
+  text-decoration: none;
+  padding: 10px;
+}
+/* PROJECT CONTAINER */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+/* PROJECT CARD */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background-color: rgb(12, 5, 47);
+  padding: 10px;
+  justify-content: center;
+  border-radius: 7px;
+  border: 1px solid #1e293b;
+}
+.project-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.project-card h4 {
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 0.5rem;
+  margin-bottom: 0;
+}
+.project-card p {
+  margin-top: 0;
+  font-size: 15px;
+  line-height: 1.3rem;
+  padding: 0.5rem;
+  margin-bottom: 5px;
+}
+.project-tech {
+  display: flex;
+  gap: 8px;
+  margin-top: 0;
+  padding: 0.5rem;
+}
+.project-tech span {
+  grid-area: 8px;
+  background-color: #303741;
+  border: 2px solid #303741;
+  padding: 2px 8px;
+  font-weight: lighter;
+  font-size: 15px;
+  border-radius: 7px;
+}
+.js-icon {
+  color: orange;
+}
+.project-links {
+  display: flex;
+  gap: 20px;
+}
+.project-links a {
+  text-decoration: none;
+  color: #6c4cff;
+  padding: 0.5rem;
+}
+
+/* LETS WORK TOGETHER /CONTACT */
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-info {
+  /* padding: 0.5rem; */
+}
+
+.contact-info h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding: 0.5rem;
+}
+.contact-info p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.3rem;
+  padding: 0.5rem;
+}
+.contact-item {
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* justify-content: center; */
+  margin: 5px;
+  padding: 0.5rem;
+}
+.contact-item i {
+  color: #6c4cff;
+}
+.contact-item span {
+  margin-left: 30px;
 }
