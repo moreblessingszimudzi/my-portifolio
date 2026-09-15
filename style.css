@@ -13,6 +13,15 @@ body {
   padding: 0;
   margin: 10px auto;
 }
+@media (max-width: 768px) {
+  .main-container {
+    width: 100%;
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+  }
+}
+
 /* NAVIGATION */
 .navigation {
   display: flex;
@@ -38,6 +47,22 @@ body {
   list-style: none;
   font-size: 17px;
   font-weight: lighter;
+}
+.menu-icon {
+  display: none;
+}
+@media (max-width: 768px) {
+  .navigation-links,
+  .cv-button {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    color: #684cff;
+    font-size: 28px;
+    cursor: pointer;
+    /* padding: 5px; */
+  }
 }
 .navigation-links a {
   text-decoration: none;
@@ -70,13 +95,29 @@ body {
   border-bottom: 2px solid #17243a;
 }
 
+@media (max-width: 768px) {
+  #home {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 /* HERO CONTENT  */
 .hero-content {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  /* gap: 5px; */
+  gap: 5px;
+}
+@media (max-width: 768px) {
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+  }
 }
 
 .intro-text {
@@ -87,28 +128,66 @@ body {
   line-height: 1rem;
   margin: 5px 0;
 }
+@media (max-width: 768px) {
+  .intro-text {
+    color: #6c4cff;
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1rem;
+    margin: 0;
+  }
+}
+
 .hero-content h1 {
   line-height: 2rem;
   padding: 0.5rem;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .hero-content h1 {
+    line-height: 2rem;
+    padding: 0.5rem;
+    margin: 0;
+  }
+}
+
 .hero-content h2 {
   line-height: 2rem;
   color: #6c4cff;
   padding: 0.5rem;
   margin: 0;
 }
+@media (max-width: 768px) {
+  .hero-content h2 {
+    line-height: 2rem;
+    color: #6c4cff;
+    padding: 0.5rem;
+    margin: 0;
+  }
+}
+
 .hero-description {
   font-size: 17px;
   line-height: 1.3rem;
   padding: 0.5rem;
   margin: 5px 0;
 }
+@media (max-width: 768px) {
+  .hero-description {
+    margin: 0;
+    padding: 0.5rem;
+    font-size: 17px;
+    line-height: 1.3rem;
+  }
+}
+
 .hero-buttons {
   display: flex;
   gap: 20px;
   padding: 0.5rem;
 }
+
 /* BUTTON 1 */
 .hero-button-1 {
   text-decoration: none;
@@ -119,6 +198,7 @@ body {
   font-size: 15px;
   border: 1px solid rgb(36, 36, 185);
 }
+
 /* BUTTON 2 */
 .hero-button-2 {
   text-decoration: none;
@@ -127,10 +207,35 @@ body {
   border: 1px solid rgb(44, 12, 111);
   border-radius: 7px;
 }
+@media (max-width: 768px) {
+  .hero-buttons {
+    display: flex;
+    gap: 10px;
+    padding: 0.5rem;
+  }
+  .hero-button-1 {
+    text-decoration: none;
+    color: white;
+    background: rgb(36, 36, 185);
+    border-radius: 7px;
+    padding: 1px;
+    font-size: 15px;
+    border: 1px solid rgb(36, 36, 185);
+  }
+  /* BUTTON 2 */
+  .hero-button-2 {
+    text-decoration: none;
+    color: white;
+    padding: 3px;
+    border: 1px solid rgb(44, 12, 111);
+    border-radius: 7px;
+  }
+}
 /* HERO CONTACT */
 
 .hero-contact {
   display: flex;
+
   align-items: center;
   padding: 0.5rem;
   gap: 20px;
@@ -151,13 +256,41 @@ body {
 .hero-icons i:hover {
   color: #6c4cff;
 }
+@media (max-width: 768px) {
+  .hero-contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-contact p {
+    font-size: 15px;
+    line-height: 1.3rem;
+    margin: 0;
+    padding: 0.5rem;
+  }
+  .hero-icons i {
+    color: white;
+    font-size: 16px;
+  }
+}
 /* HERO IMAGE */
 
 .hero-image {
   width: 40vh;
   height: auto;
+  object-fit: cover;
   /* border-radius: 10%; */
   /* box-shadow: 2px 2px 10px rgb(83, 20, 232); */
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    width: 200px;
+    height: 320px;
+    object-fit: cover;
+  }
 }
 /* ABOUT */
 #about {
@@ -292,11 +425,15 @@ body {
   font-size: 15px;
 }
 .services-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
   gap: 20px;
 }
 .service-card {
   display: grid;
+
   background: rgba(10, 25, 45, 0.7);
 
   /* background-color: rgb(12, 5, 47); */
@@ -323,6 +460,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   /* border-bottom: 2px solid #17243a; */
   border-top: 2px solid #303741;
   margin-top: 10px;
